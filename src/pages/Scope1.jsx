@@ -75,7 +75,7 @@ function Scope1() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label className='my-4 md:mt-0'>Enter your car brand:</label>
+                        <label className='my-4 md:mt-0'>Enter your car model:</label>
                         <SearchModel />
                     </div>
                 </div>

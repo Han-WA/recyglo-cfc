@@ -28,7 +28,7 @@ function Scope2() {
         <div className='flex flex-col md:flex-row items-center md:items-end justify-evenly mb-5'>
           <div className="flex flex-col">
             <h2 className='md:text-xl text-md font-bold text-gray-500 my-6'>Scope 2 Indirect Emission</h2>
-            <label className='mb-4'>Enter electricity:</label>
+            <label className='mb-4'>Enter electricity (kilowatt):</label>
             <input onChange={(e) => handleWatt(e.target.value)} className='p-4' placeholder='Kilowatt' />
           </div>
         </div>

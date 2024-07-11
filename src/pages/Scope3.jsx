@@ -42,7 +42,7 @@ function Scope3() {
             <label className='mb-4'>Flight (Air Travel):</label>
             <input onChange={(e) => handleFlight(e.target.value)} className='p-4' placeholder='kilometer (km)'/>
 
-            <label className='my-4'>Water Supply</label>
+            <label className='my-4'>Water Supply (Domestic water/ Drinking water)</label>
             <input onChange={(e) => handleWaterSupply(e.target.value)} className='p-4' placeholder='liter'/>
 
             <label className='my-4'>Waste Water</label>

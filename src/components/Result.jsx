@@ -6,8 +6,9 @@ import jsPDF from 'jspdf';
 import Disclaimer from '../pages/Disclaimer';
 
 function Result() {
-  const { orgform, form, estimatesCO2, watt, wattCo2, flight, flightCo2, wsupply, wsupplyCo2, wastew, wastewCo2  } = useContext(Data);
+  const { orgform, form, estimatesCO2, watt, wattCo2, flight, flightCo2, wsupply, wsupplyCo2, wastew, wastewCo2, dark } = useContext(Data);
   const { org, address } = orgform;
+
   const resultRef = useRef();
 
   const handleDownload = async () => {
@@ -35,7 +36,7 @@ function Result() {
   (wastewCo2 || 0);
 
   return (
-    <div ref={resultRef} className='bg-white w-full lg:w-[50%] h-[50%] lg:h-full p-4 px-6'>
+    <div ref={resultRef} className={`w-full lg:w-[50%] h-[50%] lg:h-full p-4 px-6 ${dark ? 'bg-gray-500 text-white' : 'bg-white text-black'}`}>
 
       <Letter onDownload={handleDownload} />
 

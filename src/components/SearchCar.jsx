@@ -81,14 +81,14 @@ function SearchCar() {
 
     return (
         <div className='relative'>
-            <input value={carQuery} onChange={(e) => handleChange(e.target.value)} className='p-3' placeholder='eg. Totyota, Tesla,...'></input>
+            <input value={carQuery} onChange={(e) => handleChange(e.target.value)} className='p-3 input-no-dark' placeholder='eg. Totyota, Tesla,...'></input>
 
             {carSuggestions.length > 0 && (
                 <ul className="absolute left-0 right-0 mt-2 bg-white border rounded-lg shadow-md max-h-60 overflow-auto z-10">
                     {carSuggestions.map((suggestion, index) => (
                         <li
                             key={index}
-                            className="p-2 cursor-pointer hover:bg-gray-200 text-base"
+                            className="p-2 cursor-pointer hover:bg-gray-200 text-base input-no-dark"
                             onClick={() => carSuggestionClick(suggestion)}
                         >
                             {suggestion}

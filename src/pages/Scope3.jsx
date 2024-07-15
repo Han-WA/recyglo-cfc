@@ -40,13 +40,13 @@ function Scope3() {
           <div className="flex flex-col">
             <h2 className='md:text-xl text-md font-bold text-gray-500 my-6'>Scope 3 Indirect Indirect Emission</h2>
             <label className='mb-4'>Flight (Air Travel):</label>
-            <input onChange={(e) => handleFlight(e.target.value)} className='p-4' placeholder='kilometer (km)'/>
+            <input onChange={(e) => handleFlight(e.target.value)} className='p-4 input-no-dark' placeholder='kilometer (km)'/>
 
             <label className='my-4'>Water Supply (Domestic water/ Drinking water)</label>
-            <input onChange={(e) => handleWaterSupply(e.target.value)} className='p-4' placeholder='liter'/>
+            <input onChange={(e) => handleWaterSupply(e.target.value)} className='p-4 input-no-dark' placeholder='liter'/>
 
             <label className='my-4'>Waste Water</label>
-            <input onChange={(e) => handleWasteWater(e.target.value)} className='p-4' placeholder='liter'/>
+            <input onChange={(e) => handleWasteWater(e.target.value)} className='p-4 input-no-dark' placeholder='liter'/>
           </div>
         </div>  
       </form>

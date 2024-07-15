@@ -83,13 +83,13 @@ function Scope1() {
                 <div className='flex flex-col md:flex-row items-center justify-evenly'>
                     <div className="flex flex-col">
                         <label className='mb-4'>Enter Distance:</label>
-                        <input value={form.distance === 0 ? '' : form.distance} onChange={(e) => handleDistance(e.target.value)} className='p-3' placeholder='eg. 20, 100, 4000'></input>
+                        <input value={form.distance === 0 ? '' : form.distance} onChange={(e) => handleDistance(e.target.value)} className='p-3 input-no-dark' placeholder='eg. 20, 100, 4000'></input>
                     </div>
 
                     <div className="flex flex-col w-[31%]">
                         <label className='my-4 md:mt-0'>Unit</label>
                         <select
-                            className="w-full p-3 bg-white border text-md border-gray-300 rounded-lg focus:outline-none"
+                            className="w-full p-3 bg-white border text-md border-gray-300 rounded-lg focus:outline-none input-no-dark"
                             value={form.unit}
                             onChange={handleUnit}
                         >
@@ -108,8 +108,8 @@ function Scope1() {
             </form>
 
             <div className="flex w-full item-center justify-end mt-[15%] mb-3 ">
-                <button className="text-black text-[20px] font-semibold mt-1 hover:text-white " onClick={clickNext}>Next</button>
-                <TiArrowRightThick className='mr-6 ml-2 size-9' />
+                <button className="text-green-500 text-[20px] font-semibold mt-1 hover:text-white " onClick={clickNext}>Next</button>
+                <TiArrowRightThick className='mr-6 ml-2 size-9 text-green-500 hover:text-white' />
             </div>
         </div>
     )

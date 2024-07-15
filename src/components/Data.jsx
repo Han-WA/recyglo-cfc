@@ -40,11 +40,14 @@ export const DataProvider = ({children}) => {
 
     const [ wastew, setWastew ] = useState(0);
     const [ wastewCo2, setWastewCo2 ] = useState(0);
+    
+
+    const [dark, setDark] = useState(false);
 
     
 
     return (
-        <Data.Provider value={{ form, setForm, orgform, setOrgForm, carId, setCarId, modelId, setModelId, estimatesCO2, setEstimatesCO2, watt, setWatt, wattCo2, setWattCo2, flight, setFlight, flightCo2, setFlightCo2, wsupply, setWsupply, wsupplyCo2, setWsupplyCo2, wastew, setWastew, wastewCo2, setWastewCo2}}>{children}</Data.Provider>
+        <Data.Provider value={{ form, setForm, orgform, setOrgForm, carId, setCarId, modelId, setModelId, estimatesCO2, setEstimatesCO2, watt, setWatt, wattCo2, setWattCo2, flight, setFlight, flightCo2, setFlightCo2, wsupply, setWsupply, wsupplyCo2, setWsupplyCo2, wastew, setWastew, wastewCo2, setWastewCo2, dark, setDark}}>{children}</Data.Provider>
     );
 }
 

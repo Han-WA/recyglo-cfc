@@ -12,7 +12,7 @@ function Letter({ onDownload }) {
           <h1 className='text-xl font-bold'>Carbon Footprint Receipt</h1>
           <div className='flex items-center justify-center hidden-for-pdf'>
             <IoCloudDownloadSharp size={25} color='grey' className="download-hide" />
-            <button className='ml-3 text-slate-500 download-hide' onClick={onDownload}>Download</button>
+            <button className='ml-3 text-slate-800 download-hide' onClick={onDownload}>Download</button>
           </div>
         </div>
 

@@ -74,13 +74,13 @@ function SearchModel() {
 
     return (
         <div className='relative'>
-            <input value={modelQuery} onChange={(e) => handleChange(e.target.value)} className='p-3' placeholder='eg. Camry, Model S, ...'></input>
+            <input value={modelQuery} onChange={(e) => handleChange(e.target.value)} className='p-3 input-no-dark' placeholder='eg. Camry, Model S, ...'></input>
             {modelSuggestions.length > 0 && (
                 <ul className="absolute left-0 right-0 mt-2 bg-white border rounded-lg shadow-md max-h-60 overflow-auto z-10">
                     {modelSuggestions.map((suggestion, index) => (
                         <li
                             key={index}
-                            className="p-2 cursor-pointer hover:bg-gray-200 text-base"
+                            className="p-2 cursor-pointer hover:bg-gray-200 text-base input-no-dark"
                             onClick={() => modelSuggestionClick(suggestion)}
                         >
                             {suggestion}

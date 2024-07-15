@@ -29,14 +29,14 @@ function Scope2() {
           <div className="flex flex-col">
             <h2 className='md:text-xl text-md font-bold text-gray-500 my-6'>Scope 2 Indirect Emission</h2>
             <label className='mb-4'>Enter electricity (kilowatt):</label>
-            <input onChange={(e) => handleWatt(e.target.value)} className='p-4' placeholder='Kilowatt' />
+            <input onChange={(e) => handleWatt(e.target.value)} className='p-4 input-no-dark' placeholder='Kilowatt' />
           </div>
         </div>
       </form>
 
       <div className="flex w-full item-center justify-end mt-[36%] mb-3">
-        <button className="text-black text-[20px] font-semibold hover:text-white mt-1 " onClick={clickNext}>Next</button>
-        <TiArrowRightThick className='mr-6 ml-2 size-9' />
+        <button className="text-green-500 text-[20px] font-semibold hover:text-white mt-1 " onClick={clickNext}>Next</button>
+        <TiArrowRightThick className='mr-6 ml-2 size-9 text-green-500 hover:text-white' />
       </div>
     </div>
   )
